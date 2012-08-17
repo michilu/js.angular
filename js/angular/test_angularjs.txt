@@ -2,9 +2,9 @@ How to use?
 ===========
 
 
-You can import ``XXX`` from ``js.angular`` and ``need`` it where you want
+You can import ``angular`` from ``js.angular`` and ``need`` it where you want
 these resources to be included on a page::
 
-  >>> from js.angular import XXX # XXX fix this test
-  >>> XXX.need()
+  >>> from js.angular import angular
+  >>> angular.need()
 
