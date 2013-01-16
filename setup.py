@@ -17,8 +17,7 @@ long_description = (
     read('README.rst')
     + '\n' +
     read('js', 'angular', 'test_angularjs.txt')
-    + '\n' +
-    read('CHANGES.txt'))
+    )
 
 setup(
     name='js.angular',
