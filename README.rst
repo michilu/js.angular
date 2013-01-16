@@ -1,5 +1,8 @@
-js.angular
-**********
+js.angular |Build Status|_
+**************************
+
+.. |Build Status| image:: https://travis-ci.org/MiCHiLU/js.angular.png
+.. _`Build Status`: http://travis-ci.org/MiCHiLU/js.angular
 
 Introduction
 ============
