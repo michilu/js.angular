@@ -19,9 +19,6 @@ angular_sanitize              = Resource(library, 'angular-sanitize.js',
                                          minified='angular-sanitize.min.js')
 angular_scenario              = Resource(library, 'angular-scenario.js')
 
-jstd_scenario_adapter         = Resource(library, 'jstd-scenario-adapter.js')
-jstd_scenario_adapter_config  = Resource(library, 'jstd-scenario-adapter-config.js')
-
 angular_locale_am             = Resource(library, 'i18n/angular-locale_am.js')
 angular_locale_am_et          = Resource(library, 'i18n/angular-locale_am-et.js')
 angular_locale_ar             = Resource(library, 'i18n/angular-locale_ar.js')

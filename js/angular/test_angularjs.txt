@@ -18,8 +18,6 @@ these resources to be included on a page::
   ...     angular_resource,
   ...     angular_sanitize,
   ...     angular_scenario,
-  ...     jstd_scenario_adapter,
-  ...     jstd_scenario_adapter_config,
   ... )
 
   >>> from js.angular import (
