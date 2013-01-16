@@ -24,7 +24,12 @@ setup(
     version=version,
     description="Fanstatic packaging of AngularJS",
     long_description=long_description,
-    classifiers=[],
+    classifiers=[
+      "Programming Language :: Python :: 2.6",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3.2",
+      "Programming Language :: Python :: Implementation :: PyPy",
+    ],
     keywords='',
     license='MIT',
     packages=find_packages(),namespace_packages=['js'],
