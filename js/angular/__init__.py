@@ -4,12 +4,6 @@ library = Library('angularjs', 'resources')
 
 angular                       = Resource(library, 'angular.js',
                                          minified='angular.min.js')
-angular_bootstrap             = Resource(library, 'angular-bootstrap.js',
-                                         minified='angular-bootstrap.min.js',
-                                         depends=[angular])
-angular_bootstrap_prettify    = Resource(library, 'angular-bootstrap-prettify.js',
-                                         minified='angular-bootstrap-prettify.min.js',
-                                         depends=[angular])
 angular_cookies               = Resource(library, 'angular-cookies.js',
                                          minified='angular-cookies.min.js',
                                          depends=[angular])
