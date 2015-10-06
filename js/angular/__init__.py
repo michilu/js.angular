@@ -776,4 +776,5 @@ _langs = [
 for lang in _langs:
     locales[lang] = locals()["angular_locale_{0}".format(
         lang).replace("-", "_")] = Resource(
-            library, "i18n/angular-locale_{0}.js".format(lang))
+            library, "i18n/angular-locale_{0}.js".format(lang),
+            depends=[angular])
