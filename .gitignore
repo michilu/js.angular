@@ -6,6 +6,7 @@ parts
 *.egg-info
 *.pyc
 *.sw?
+*.DS_STORE
 *~
 develop-eggs
 dist
