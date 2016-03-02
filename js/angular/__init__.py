@@ -21,6 +21,9 @@ angular_mocks = Resource(
 angular_resource = Resource(
     library, 'angular-resource.js',
     minified='angular-resource.min.js', depends=[angular])
+angular_route = Resource(
+    library, 'angular-route.js',
+    minified='angular-route.min.js', depends=[angular])
 angular_sanitize = Resource(
     library, 'angular-sanitize.js',
     minified='angular-sanitize.min.js', depends=[angular])
