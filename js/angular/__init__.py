@@ -3,6 +3,9 @@ from fanstatic import Library, Resource
 library = Library('angularjs', 'resources')
 
 angular = Resource(library, 'angular.js', minified='angular.min.js')
+angular_animate = Resource(
+    library, 'angular-animate.js',
+    minified='angular-animate.min.js', depends=[angular])
 angular_bootstrap = Resource(
     library, 'angular-bootstrap.js',
     minified='angular-bootstrap.min.js',
