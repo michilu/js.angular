@@ -1,3 +1,5 @@
 recursive-include js/angular/resources *.*
 recursive-include js/angular *.txt
 include *.txt
+include *.py
+include buildout.cfg

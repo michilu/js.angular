@@ -1,98 +1,125 @@
+'use strict';
 angular.module("ngLocale", [], ["$provide", function($provide) {
 var PLURAL_CATEGORY = {ZERO: "zero", ONE: "one", TWO: "two", FEW: "few", MANY: "many", OTHER: "other"};
 $provide.value("$locale", {
   "DATETIME_FORMATS": {
-    "AMPMS": {
-      "0": "ص",
-      "1": "م"
-    },
-    "DAY": {
-      "0": "الأحد",
-      "1": "الاثنين",
-      "2": "الثلاثاء",
-      "3": "الأربعاء",
-      "4": "الخميس",
-      "5": "الجمعة",
-      "6": "السبت"
-    },
-    "MONTH": {
-      "0": "يناير",
-      "1": "فبراير",
-      "2": "مارس",
-      "3": "أبريل",
-      "4": "مايو",
-      "5": "يونيو",
-      "6": "يوليو",
-      "7": "أغسطس",
-      "8": "سبتمبر",
-      "9": "أكتوبر",
-      "10": "نوفمبر",
-      "11": "ديسمبر"
-    },
-    "SHORTDAY": {
-      "0": "الأحد",
-      "1": "الاثنين",
-      "2": "الثلاثاء",
-      "3": "الأربعاء",
-      "4": "الخميس",
-      "5": "الجمعة",
-      "6": "السبت"
-    },
-    "SHORTMONTH": {
-      "0": "يناير",
-      "1": "فبراير",
-      "2": "مارس",
-      "3": "أبريل",
-      "4": "مايو",
-      "5": "يونيو",
-      "6": "يوليو",
-      "7": "أغسطس",
-      "8": "سبتمبر",
-      "9": "أكتوبر",
-      "10": "نوفمبر",
-      "11": "ديسمبر"
-    },
-    "fullDate": "EEEE، d MMMM، y",
-    "longDate": "d MMMM، y",
-    "medium": "dd‏/MM‏/yyyy h:mm:ss a",
-    "mediumDate": "dd‏/MM‏/yyyy",
+    "AMPMS": [
+      "\u0635",
+      "\u0645"
+    ],
+    "DAY": [
+      "\u0627\u0644\u0623\u062d\u062f",
+      "\u0627\u0644\u0627\u062b\u0646\u064a\u0646",
+      "\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621",
+      "\u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621",
+      "\u0627\u0644\u062e\u0645\u064a\u0633",
+      "\u0627\u0644\u062c\u0645\u0639\u0629",
+      "\u0627\u0644\u0633\u0628\u062a"
+    ],
+    "ERANAMES": [
+      "\u0642\u0628\u0644 \u0627\u0644\u0645\u064a\u0644\u0627\u062f",
+      "\u0645\u064a\u0644\u0627\u062f\u064a"
+    ],
+    "ERAS": [
+      "\u0642.\u0645",
+      "\u0645"
+    ],
+    "FIRSTDAYOFWEEK": 5,
+    "MONTH": [
+      "\u064a\u0646\u0627\u064a\u0631",
+      "\u0641\u0628\u0631\u0627\u064a\u0631",
+      "\u0645\u0627\u0631\u0633",
+      "\u0623\u0628\u0631\u064a\u0644",
+      "\u0645\u0627\u064a\u0648",
+      "\u064a\u0648\u0646\u064a\u0648",
+      "\u064a\u0648\u0644\u064a\u0648",
+      "\u0623\u063a\u0633\u0637\u0633",
+      "\u0633\u0628\u062a\u0645\u0628\u0631",
+      "\u0623\u0643\u062a\u0648\u0628\u0631",
+      "\u0646\u0648\u0641\u0645\u0628\u0631",
+      "\u062f\u064a\u0633\u0645\u0628\u0631"
+    ],
+    "SHORTDAY": [
+      "\u0627\u0644\u0623\u062d\u062f",
+      "\u0627\u0644\u0627\u062b\u0646\u064a\u0646",
+      "\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621",
+      "\u0627\u0644\u0623\u0631\u0628\u0639\u0627\u0621",
+      "\u0627\u0644\u062e\u0645\u064a\u0633",
+      "\u0627\u0644\u062c\u0645\u0639\u0629",
+      "\u0627\u0644\u0633\u0628\u062a"
+    ],
+    "SHORTMONTH": [
+      "\u064a\u0646\u0627\u064a\u0631",
+      "\u0641\u0628\u0631\u0627\u064a\u0631",
+      "\u0645\u0627\u0631\u0633",
+      "\u0623\u0628\u0631\u064a\u0644",
+      "\u0645\u0627\u064a\u0648",
+      "\u064a\u0648\u0646\u064a\u0648",
+      "\u064a\u0648\u0644\u064a\u0648",
+      "\u0623\u063a\u0633\u0637\u0633",
+      "\u0633\u0628\u062a\u0645\u0628\u0631",
+      "\u0623\u0643\u062a\u0648\u0628\u0631",
+      "\u0646\u0648\u0641\u0645\u0628\u0631",
+      "\u062f\u064a\u0633\u0645\u0628\u0631"
+    ],
+    "STANDALONEMONTH": [
+      "\u064a\u0646\u0627\u064a\u0631",
+      "\u0641\u0628\u0631\u0627\u064a\u0631",
+      "\u0645\u0627\u0631\u0633",
+      "\u0623\u0628\u0631\u064a\u0644",
+      "\u0645\u0627\u064a\u0648",
+      "\u064a\u0648\u0646\u064a\u0648",
+      "\u064a\u0648\u0644\u064a\u0648",
+      "\u0623\u063a\u0633\u0637\u0633",
+      "\u0633\u0628\u062a\u0645\u0628\u0631",
+      "\u0623\u0643\u062a\u0648\u0628\u0631",
+      "\u0646\u0648\u0641\u0645\u0628\u0631",
+      "\u062f\u064a\u0633\u0645\u0628\u0631"
+    ],
+    "WEEKENDRANGE": [
+      4,
+      5
+    ],
+    "fullDate": "EEEE\u060c d MMMM\u060c y",
+    "longDate": "d MMMM\u060c y",
+    "medium": "dd\u200f/MM\u200f/y h:mm:ss a",
+    "mediumDate": "dd\u200f/MM\u200f/y",
     "mediumTime": "h:mm:ss a",
-    "short": "d‏/M‏/yyyy h:mm a",
-    "shortDate": "d‏/M‏/yyyy",
+    "short": "d\u200f/M\u200f/y h:mm a",
+    "shortDate": "d\u200f/M\u200f/y",
     "shortTime": "h:mm a"
   },
   "NUMBER_FORMATS": {
-    "CURRENCY_SYM": "£",
-    "DECIMAL_SEP": "٫",
-    "GROUP_SEP": "٬",
-    "PATTERNS": {
-      "0": {
-        "gSize": 0,
-        "lgSize": 0,
-        "macFrac": 0,
+    "CURRENCY_SYM": "\u00a3",
+    "DECIMAL_SEP": "\u066b",
+    "GROUP_SEP": "\u066c",
+    "PATTERNS": [
+      {
+        "gSize": 3,
+        "lgSize": 3,
         "maxFrac": 3,
         "minFrac": 0,
         "minInt": 1,
-        "negPre": "",
-        "negSuf": "-",
+        "negPre": "-",
+        "negSuf": "",
         "posPre": "",
         "posSuf": ""
       },
-      "1": {
-        "gSize": 0,
-        "lgSize": 0,
-        "macFrac": 0,
+      {
+        "gSize": 3,
+        "lgSize": 3,
         "maxFrac": 2,
         "minFrac": 2,
         "minInt": 1,
-        "negPre": "\u00A4 ",
-        "negSuf": "-",
-        "posPre": "\u00A4 ",
+        "negPre": "-\u00a4\u00a0",
+        "negSuf": "",
+        "posPre": "\u00a4\u00a0",
         "posSuf": ""
       }
-    }
+    ]
   },
   "id": "ar-001",
-  "pluralCat": function (n) {  if (n == 0) {   return PLURAL_CATEGORY.ZERO;  }  if (n == 1) {   return PLURAL_CATEGORY.ONE;  }  if (n == 2) {   return PLURAL_CATEGORY.TWO;  }  if (n == (n | 0) && n % 100 >= 3 && n % 100 <= 10) {   return PLURAL_CATEGORY.FEW;  }  if (n == (n | 0) && n % 100 >= 11 && n % 100 <= 99) {   return PLURAL_CATEGORY.MANY;  }  return PLURAL_CATEGORY.OTHER;}
+  "localeID": "ar_001",
+  "pluralCat": function(n, opt_precision) {  if (n == 0) {    return PLURAL_CATEGORY.ZERO;  }  if (n == 1) {    return PLURAL_CATEGORY.ONE;  }  if (n == 2) {    return PLURAL_CATEGORY.TWO;  }  if (n % 100 >= 3 && n % 100 <= 10) {    return PLURAL_CATEGORY.FEW;  }  if (n % 100 >= 11 && n % 100 <= 99) {    return PLURAL_CATEGORY.MANY;  }  return PLURAL_CATEGORY.OTHER;}
 });
 }]);
