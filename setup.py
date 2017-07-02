@@ -8,7 +8,7 @@ import os
 # For example, a packaging bugfix release version 1.4.4 of the
 # js.jquery package would be version 1.4.4-1 .
 
-version = '1.4.7'
+version = '1.6.4'
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
@@ -25,9 +25,10 @@ setup(
     description="Fanstatic packaging of AngularJS",
     long_description=long_description,
     classifiers=[
-      "Programming Language :: Python :: 2.6",
       "Programming Language :: Python :: 2.7",
-      "Programming Language :: Python :: 3.2",
+      "Programming Language :: Python :: 3.4",
+      "Programming Language :: Python :: 3.5",
+      "Programming Language :: Python :: 3.6",
       "Programming Language :: Python :: Implementation :: PyPy",
     ],
     keywords='',
