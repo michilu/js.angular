@@ -1,8 +1,8 @@
 js.angular |Build Status|_
 **************************
 
-.. |Build Status| image:: https://travis-ci.org/MiCHiLU/js.angular.png
-.. _`Build Status`: http://travis-ci.org/MiCHiLU/js.angular
+.. |Build Status| image:: https://travis-ci.org/gocept/js.angular.png
+.. _`Build Status`: http://travis-ci.org/gocept/js.angular
 
 Introduction
 ============
