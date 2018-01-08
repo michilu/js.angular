@@ -10,12 +10,12 @@ these resources to be included on a page::
 
   >>> from js.angular import (
   ...     angular,
-  ...     angular_bootstrap,
-  ...     angular_bootstrap_prettify,
+  ...     angular_animate,
   ...     angular_cookies,
   ...     angular_loader,
   ...     angular_mocks,
   ...     angular_resource,
+  ...     angular_route,
   ...     angular_sanitize,
   ...     angular_scenario,
   ... )
